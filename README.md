@@ -96,7 +96,7 @@ URL: /api/users
 
 Description: Returns a list of all users. Requires a valid JWT in the Authorization header.
 
-Headers: Authorization: Bearer <Your_Token_Here>
+Headers: Authorization: Bearer <token>
 
 Response (200 OK): [ { "id": 1, "name": "John Doe", "email": "john@example.com" } ]
 
