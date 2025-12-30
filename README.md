@@ -1,14 +1,19 @@
 **User Management System API
+
 Description**
+
 This project is a RESTful Backend API built using Node.js, Express, and MySQL. It provides a secure system for user registration and authentication. The API follows industry-standard security practices, including password hashing with Bcryptjs and session management using JSON Web Tokens (JWT). Interactive documentation is provided via Swagger UI to allow for easy testing of all endpoints.
 
 **Setup Instructions**
+
 **1. Prerequisites**
+
 Node.js: Ensure you have Node.js installed
 
 XAMPP: Required to run the Apache server and MySQL database.
 
 2. Project Installation
+   
 Extract the project folder
 
 Open your terminal/command prompt inside the backendNode folder.
@@ -19,6 +24,7 @@ Install the required dependencies by running:
 -npm install
 
 3**. Database Configuration**
+
 Start XAMPP Control Panel and click "Start" for Apache and MySQL.
 
 Open your browser and navigate to: http://localhost/phpmyadmin
@@ -28,13 +34,21 @@ Create a new database named: user_management
 Click on the SQL tab and execute the following script to create the table:
 
 CREATE TABLE users (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     name VARCHAR(100) NOT NULL,
+    
     email VARCHAR(150) NOT NULL UNIQUE,
+    
     password VARCHAR(255) NOT NULL,
+    
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    
 );
+
 4. Environment Variables
+   
 Create a file named .env in the root folder (where server.js is located) and add:
 
 PORT=3000
@@ -55,6 +69,7 @@ The server will start on http://localhost:3000.
 **API Endpoints**
 
 1. **User Registration**
+   
 Method: POST
 
 URL: /api/users/register
