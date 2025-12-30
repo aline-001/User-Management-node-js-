@@ -129,6 +129,7 @@ Response (200 OK): [ { "id": 1, "name": "John Doe", "email": "john@example.com" 
 6.**Dotenv:** For protecting sensitive configuration.
 
 **Challenges Faced**
+
 1.XAMPP MySQL Port Conflict: MySQL failed to start initially due to port 3306 being locked by background processes. Solution: I identified the conflicting processes, cleared the ib_logfile transaction logs, and verified the configuration to ensure a clean database connection.
 
 2.Asynchronous Database Logic: Handling MySQL queries in an asynchronous environment like Node.js required careful callback management. Solution: Used the mysql2 driver to handle connections efficiently.
