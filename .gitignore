@@ -1,0 +1,82 @@
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Build/Dist folders (if you had them)
+dist/
+build/
+
+# Ignore node_modules folder
+node_modules/ 
+
+# Environment variables file
+.env        
+
+# Optional: Ignore IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+# Optional: Ignore coverage reports
+coverage/
+# Optional: Ignore test result files
+test-results/
+
+# Optional: Ignore lock files
+package-lock.json
+yarn.lock
+# Optional: Ignore temporary files
+*.tmp
+*.temp
+# Optional: Ignore log files
+logs/
+*.log
+# Optional: Ignore compiled files
+*.class
+*.obj
+*.exe
+# Optional: Ignore database files
+*.sqlite
+*.db
+
+# Optional: Ignore media files
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+*.wav
+*.flac
+*.ogg
+*.aac
+*.wma
+*.webm
+*.3gp
+*.m4a
+*.m4v
+*.rmvb
+*.vob
+
+# Optional: Ignore image files
+*.png   
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+
+*.svg*.webp
+*.ico   
+*.heic
+*.raw
+*.psd
+*.ai
